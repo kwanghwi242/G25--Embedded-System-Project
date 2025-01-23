@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"pwm_general\startup_stm32f103xb.o"
+"pwm_general\main.o"
+"pwm_general\stm32f1xx_it.o"
+"pwm_general\stm32f1xx_hal_msp.o"
+"pwm_general\stm32f1xx_hal_gpio_ex.o"
+"pwm_general\stm32f1xx_hal_tim.o"
+"pwm_general\stm32f1xx_hal_tim_ex.o"
+"pwm_general\stm32f1xx_hal.o"
+"pwm_general\stm32f1xx_hal_rcc.o"
+"pwm_general\stm32f1xx_hal_rcc_ex.o"
+"pwm_general\stm32f1xx_hal_gpio.o"
+"pwm_general\stm32f1xx_hal_dma.o"
+"pwm_general\stm32f1xx_hal_cortex.o"
+"pwm_general\stm32f1xx_hal_pwr.o"
+"pwm_general\stm32f1xx_hal_flash.o"
+"pwm_general\stm32f1xx_hal_flash_ex.o"
+"pwm_general\stm32f1xx_hal_exti.o"
+"pwm_general\system_stm32f1xx.o"
+--strict --scatter "PWM_General\PWM_General.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_General.map" -o PWM_General\PWM_General.axf
